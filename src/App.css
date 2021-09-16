@@ -1,38 +1,276 @@
-.App {
-  text-align: center;
+/* Wrapping */
+.wrapper{
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* flex */
+.flex-center{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: nowrap;
+}
+.pull-to-end{
+  margin-left: auto;
+}
+
+/* Navigation */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.topnav .icon {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logout{
+  background-color: #aa0444;
+  color: white;
+  border: 0px;
+  margin-left:auto ;
 }
+.logout:hover{
+  background-color: #a33f58;
+  color: white;
+  cursor: pointer;
+ 
+}
+
+
+/* Navigation end---- */
+
+
+/* Sign up form */
+
+/* Full-width input fields */
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+.custom-select {
+  font-family: Arial;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 0px;
+  background: #f1f1f1;
+}
+.custom-textarea{
+  font-family: Arial;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 0px;
+  background: #f1f1f1;
+}
+
+/* Home page */
+.logo{
+  width: 30%;
+} 
+
+.welcome{
+  overflow: hidden;
+  width: 100%;
+  padding: 5px 0px;
+  background-color: #04AA6D;
+  margin:10px auto; 
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 25%) -18px 2px 4px 0px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+.welcome h2{
+  text-align: center;
+}
+
+.noteContainer{
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #93d3bb;
+  min-height:600px ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 10px 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+
+
+.note{
+  width: 32%;
+  max-height: 300px;
+  margin-top:10px ;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: rgb(230, 205, 196);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.noteheader{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items:center;
+  justify-content: space-between;
+  background-color: coral; 
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.usernote{
+  width: 32%;
+  margin-right: 10px;
+  max-height: 300px;
+  margin-top:10px ;
+  margin-bottom: 10px;
+  background-color: rgb(196, 230, 204);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.privatenote{
+  width: 32%;
+  margin-right: 10px;
+  max-height: 300px;
+  margin-top:10px ;
+  margin-bottom: 10px;
+  background-color: rgb(212, 35, 44);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.notebtn{
+  padding: 5px;
+  border: 0px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 2px;
+  
+}
+.notebtn:hover{
+ 
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.edit{
+  background-color: rgb(31, 149, 204);
+}
+.delete{
+  background-color: rgb(204, 31, 60);
+}
+
+.usernote .noteheader{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items:center;
+  justify-content: space-between;
+  background-color:  #04AA6D;
+  border-radius: 10px;
+  padding: 5px;
+}
+ .noteaction{
+  display: none;
+}
+
+.usernote .noteheader .noteaction{
+  display: block;
+}
+.privatenote .noteheader .noteaction{
+  display: block;
+}
+
+
+
+.notebody{
+  overflow: auto;
+  height: 226px;
+  padding: 10px;
+  text-align: justify;
+}
+
+
+
+
+
